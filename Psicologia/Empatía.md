@@ -1,0 +1,5 @@
+# Empatía.
+
+La palabra __empatía__ se formó para indicar la participación objetiva y profunda (interna) de un individuo en los sentimientos, conducta, ideas, posturas intelectuales, etc. de otro, y la comprensión íntima de su situación vital e intelectual, y se tomó la palabra __empatía__ (con la idea de introducción en lo que experimenta otro) para expresar esto y distinguirlo de __simpatía__, palabra que compuesta por el prefijo griego Syn- (idea de puesta en común, con, conjuntamente) pero que estaba especializada ya en otra cosa: la expresión de una participación o comunidad de sentimientos y afectos, pero de carácter subjetivo y no racional, como una afinidad espontánea, frente a la empatía que es objetiva, reflexiva y crítica.
+
+Se entiende como el proceso por el que captamos y comprendemos los estados emocionales de otras personas. Se distingue entre la empatía afectiva o emocional que consiste en la capacidad para responder con una emoción apropiada a la situación del otro y la empatía cognitiva que es la capacidad de comprender el estado mental del otro.
