@@ -47,6 +47,10 @@ Se trata del principio por el cual un trabajo a realizar va a expandirse hasta o
 
 Los gastos que tiene una determinada entidad van a crecer hasta haber cubierto por completo la cifra de ingresos del que dispone. Si se tienen más ingresos, se incrementarán los gastos.
 
+> No importa cuanto se gane, siempre se encontrará la manera de consumir cualquier excedente de capital e incluso hasta superarlo, incurriendo así en deudas.
+
+Una persona puede vivir con unos ingresos determinados sin problemas, sin embargo, si sus ingresos aumentan, esto no se traducirá en que va a contar con un excedente de capital de ahora en adelante, sino que se organizará económicamente de modo que no sobre nada o que su nuevo nivel de económico, respecto a ahorro y superávit, se ajuste a su anterior estado.
+
 ## 3. Menor relevancia, más tiempo.
 
 Se tiende a dedicar más tiempo a una tarea, cuanto más irrelevante es. Por tanto, cuanto más relevante sea la tarea, menos tiempo le dedicaremos, Existiendo una relación inversamente proporcional.
