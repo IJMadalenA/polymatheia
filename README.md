@@ -1,1 +1,1 @@
-# Polymathy
+# Polymatheia
