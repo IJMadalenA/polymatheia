@@ -1,6 +1,6 @@
 # Ley de la trivialidad.
 
-Esta ley se deduce de la [Ley de Parkinson](./Ley_de_Parkinson.md) y se relaciona con el [Efecto Dunning-Kruger](./Efecto_Dunning-Kroger).
+Esta ley se deduce de la [Ley de Parkinson](./Ley_de_Parkinson.md) y se relaciona con el [Efecto Dunning-Kruger](./Efecto_Dunning-Kruger.md).
 
 Las organizaciones, por norma general, dan un peso desproporcionado a asuntos triviales.
 
