@@ -59,9 +59,79 @@ Es una etapa donde se regresa continuamente a las etapas previas de desarrollo y
 
 [Ensayo — “No Silver Bullet” de Frederick P. Brooks, Jr. | by Jose Alejandro Gómez Castro | Medium](https://josegomezdev.medium.com/ensayo-no-silver-bullet-de-frederick-p-brooks-jr-e11c6884677d)
 
-#### Problemas esenciales.
+### Problemas esenciales.
+
+Especificación, diseño y comprobación del concepto.
+
+> Entender el concepto de lo que queremos desarrollar y su diseño.
+
+#### Complejidad.
+
+#### Conformidad.
+
+#### Tolerancias al cambio.
+
+#### Invisibilidad.
+
+### Soluciones esenciales.
+
+#### No desarrollar.
+
+En cambio optar por adquirir una solución ya existente, ya sea privada o de código abierto, o conseguir una herramienta, del tipo que sea, que permita adelantar lo más posible su desarrollo.
+
+#### Prototipado rápido.
+
+Como podrían ser las metodologías ágiles, donde la idea es obtener información lo antes posible sobre si estamos resolviendo el problema correcto y de la forma adecuada, para ello el sistema va evolucionando de forma paulatina y a traves de cambios pequeños en función de las referencias e información aportada por el usuario.
+
+#### Desarrollo evolutivo.
+
+Más alineado a la creación y acumulación de sistemas, donde se intenta obtener resultados pequeños que poco a poco vayan evolucionando, muy alineado tambien con las metodologías agiles. 
+
+#### Grandes diseñadores.
+
+Son desarrolladores que saben como abstraerse del problema específico y entender las generalidades del mismo, sabiendo diseñar una solución elegante y simple al resolver de la mejor forma el problema.
 
 
 
-#### Problemas accidentales.
+### Problemas accidentales.
+
+Detalles de la implementación y producción actual.
+
+> Plataforma, lenguaje, framework y su integración.
+
+#### Lenguajes de alto nivel.
+
+#### Multiprocesamiento.
+
+#### Entornos de programación.
+
+---
+
+
+
+## Objetivos del arquitecto.
+
+El arquitecto tiene varias partes interesadas (o _stakeholders_) las cuales tienen necesidades independientes y especificas, y el papel del arquitecto es poder conectar estos requerimientos con la implementación del sistema.
+
+Las partes interesadas con sus distintos requerimientos son:
+
+- __Cliente:__ Obtener un sistema que se amolde al presupuesto y a los tiempos acordados.
+- __Manager:__ Asociado a los requerimientos del cliente, desarrollar el software de manera independiente, formar equipos con capacidad de autogestión y una comunicación clara entre los equipos que participan en el desarrollo del sistema.
+- __Desarrolladores:__ Fácil implementación y mantenimiento, caracteristicas dependientes de la flexibilidad y escalabilidad.
+- __Usuario:__ Disponibilidad y confiabilidad del sistema.
+- __Q.A:__ Fácil testeo y comprobación de calidad.
+
+El arquitecto de software debe gestionar los siguientes requerimientos de para cada parte interesada:
+
+- __Cliente:__ Encontrar los riesgos más altos que afecten en el desarrollo del sistema.
+- __Manager:__ Modularización y flecibilidad del sistema que se está desarrollando.
+- __Desarrollador:__ Modularidad, mantenibilidad y capacidad de cambio del software.
+- __Usuario:__ Decidir estrategias para la dispobibilidad del sistema. 
+- __Q.A.:__ Que el sistema pueda ser modularizado y cada una de estas partes pueda ser probada de forma sencilla. Que el sistema pueda responder de forma consistente, que pueda ser modularizado y que dichos módulos puedan ser probados independientemente.
+
+La unión de estos requerimientos, tanto funcionales como no funcionales, va a llevar al arquitecto a tomar decisiones que impactan directamente en el desarrollo del software.
+
+---
+
+## Entender el problema.
 
