@@ -315,9 +315,9 @@ Los estilos de arquitectura toman los esquemas previos que ya otras soluciones u
 
 ---
 
+## Flujo de datos.
 
-
-## Llamada y retorno.
+### Llamada y retorno.
 
   ```mermaid
   flowchart BT
@@ -331,7 +331,7 @@ Los estilos de arquitectura toman los esquemas previos que ya otras soluciones u
   Cliente-Servidor --> Multi-nivel
   ```
 
-## Flujo de datos.
+### Flujo de datos.
 
 ```mermaid
 flowchart BT
@@ -339,5 +339,27 @@ flowchart BT
 Lote_secuancial
 
 Tubos_y_filtros.
+```
+
+---
+
+
+
+## Centradas en datos.
+
+### Pizarrón.
+
+```mermaid
+flowchart TB
+
+Process_1 --> blackboard
+
+process_2 --> blackboard
+
+Process_3 --> blackboard
+
+process_4 --> blackboard
+
+blackboard --> Out-Put.
 ```
 
