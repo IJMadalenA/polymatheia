@@ -527,6 +527,8 @@ En cada iteración
 
 Porque siempre habrá dificultades accidentales y esenciales que se combinan de formas diferentes en cada contexto
 
+Porque seguirán apareciendo dificultades accidentales que tienen que ver con las nuevas tecnologías que se inventan
+
 
 
 4. X
@@ -534,6 +536,8 @@ Porque siempre habrá dificultades accidentales y esenciales que se combinan de 
 De las formas en las que podemos trabajar con las dificultades esenciales, ¿cuál es la que más involucra a los arquitectos de software?
 
 Todas las opciones son correctas.
+
+Decidir si hacer el producto o comprarlo ya hecho.
 
 
 
@@ -569,11 +573,11 @@ Distribuido, comunicación entre componentes principalmente asincrónica
 
 
 
-9. X
+9. 
 
 ¿Cuál de los siguientes mejor describe el objetivo de un arquitecto?
 
-Usar su experiencia para diseñar el mejor sistema posible
+Comprender las necesidades de sus stakeholders al diseñar el sistema
 
 
 
@@ -638,6 +642,8 @@ No funcional
 ¿Cuál de los siguientes requerimientos funcionales incluye explícitamente un requerimiento no funcional?
 
 “Se podrán canjear puntos acumulados por el uso de tarjetas de crédito por beneficios varios, a definir por el banco.”
+
+“El administrador podrá cancelar un préstamo si detecta la posibilidad de fraude.”
 
 
 
@@ -711,6 +717,8 @@ En un centro de investigación, científicos de diferentes áreas utilizan un si
 
 Pizarrón
 
+Centro en base de datos
+
 
 
 27.
@@ -737,8 +745,8 @@ Orientado a servicios
 
 
 
-30. X
+30. 
 
 ¿Cuántos estilos de arquitectura puede haber en un sistema?
 
-Cada sistema tendrá su estilo; depende de la cantidad de sistemas
+Cada sistema puede tener múltiples estilos; no hay regla fija
