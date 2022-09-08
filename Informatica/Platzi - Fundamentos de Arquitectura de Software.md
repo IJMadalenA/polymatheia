@@ -349,6 +349,8 @@ Tubos_y_filtros.
 
 ### Pizarrón.
 
+El pizarrón es el núcleo de la arquitectura, en donde cada componente externo a él se encargarán de procesar el dato y escribirlo en el pizarrón, el cual funciona como centralizador de la información. Cuando el pizarrón ya tiene todos los datos necesarios, este mismo podría generar una salida.
+
 ```mermaid
 flowchart TB
 
@@ -363,3 +365,380 @@ process_4 --> blackboard
 blackboard --> Out-Put.
 ```
 
+### Centrada en base de datos.
+
+Un estilo común; se trata de que una cantidad de componentes comparte una misma base de datos, los cuales pueden ser desplegados al unisono y consumir de la misma base de datos, como por ejemplo una API, la cual está compuesta por varios componentes dentro de un mismo sistema, o también podrían ser componentes desplegados de forma independiente y que consumen la misma base de datos.
+
+```mermaid
+flowchart TB
+
+Component_1 --> B.D.
+
+Component_2 --> B.D.
+```
+
+### Sistema experto o basado en reglas.
+
+Un componente A (tipo cliente) consulta a uno B, donde este se encargará de tratar de entender si la petición del cliente es una consulta o una regla. Para que el componente B logre resolver la petición se va a comunicar con un tercer componente C, el cual trabajará como una __KDB__ (_Knowledge DataBase_).
+
+```mermaid
+flowchart TB
+
+Client --> Inferir_Regla
+
+Inferir_Regla --> Rule
+
+Inferir_Regla --> Query
+
+Inferir_Regla --> Knowledge_Base
+
+```
+
+
+
+## Componentes Independientes.
+
+En este estilo se desarrollan aplicaciones de forma independiente, en donde no existe un fuerte acoplamiento entre los componentes.
+
+Hay dos grandes familias dentro de este tipo de arquitectura, definidos por la manera en la que se comunican los componentes del sistema,y estos son los de __invocación implícita__, la cual suele ser basada en eventos y donde las aplicaciones se mandan mensajes entre si sin que estas conozcan exactamente con quien está hablando; y el tipo de __invocación explícita__ habla de como desarrollar componentes que si se conozcan entre si pero estén desarrollados independientemente.
+
+### Invocación implícita.
+
+En general cuando tenemos eventos, lo que tenemos son varios componentes y tenemos además un BUS de eventos, en el cual los componentes publican o escriben eventos y luego el BUS los notifica a los componentes interesados en dichos eventos.
+
+
+
+Se tienen varios componentes y se cuenta con un BUS de eventos en el cual los componentes van a escribir algunos eventos y luego el BUS los comunica a los componentes a los que les conciernan dichos eventos.
+
+```mermaid
+flowchart BT
+
+Públicar-Suscribir --> Basado_en_eventos
+
+Orientado_a_servicios_2.0 --> Basado_en_eventos
+
+Basado_en_eventos --> Invocación_implícita
+```
+
+
+
+
+
+Respecto a los __BUS de eventos__, tenemos dos tipos:
+
+- __Publicar suscribir:__ El componen inicial publica un evento y luego otros componentes están suscritos y reciben dicho evento.
+
+  ```mermaid
+  flowchart TB
+  
+  Componente_publica --> BUS
+  
+  BUS --> Componenete_suscribe
+  ```
+
+  
+
+- __Orientación a servicios:__ Tienen un BUS inteligente al que se le notifica a través de eventos al BUS y este es el que decide a quien le envía instrucciones. En este esquema los componentes no se conocen entre ellos, y se comunican utilizando al BUS como intermediario.
+
+```mermaid
+flowchart TB 
+
+Enterprise_service_BUS --> Component_1
+Component_1 --> Enterprise_service_BUS
+
+Enterprise_service_BUS --> Component_2
+Component_2 --> Enterprise_service_BUS
+
+Enterprise_service_BUS --> Component_3
+Component_3 --> Enterprise_service_BUS
+```
+
+
+
+### Invocación explícita.
+
+Los componentes se desarrollan separados, pero estos se conectan entre si, lo que significa que los componente de alguna forma deben publicar cual será la vía de comunicación que tienen disponible. Estos componentes se registran en un punto central y luego determinan la forma en la que se van a comunicar entre si. 
+
+```mermaid
+flowchart BT
+
+Orientado_a_servicios_1.0 --> Invocación_explícita
+```
+
+---
+
+
+
+## Comparación de estilos.
+
+
+
+### Monolíticos.
+
+- Se despliega un solo artefacto de software.
+
+- Se le da prioridad a la eficiencia de ejecución al tener un solo artefacto de software el cual está optimizado y con una comunicación interna bastante detallista y eficiente.
+- Son más fáciles de probar de principio a fin.
+- La curva de aprendizaje es menos pronunciada.
+- Todas las piezas constituyentes del sistema se encuentran en el mismo lugar.
+- Más fácil de modificar, ya que el cambio de un componente interno solo afectará a la misma estructura que lo aloja. 
+
+### Distribuido.
+
+- Cada despliegue es independiente aunque interconectados. 
+- Son más difíciles de probar de principio a fin ya que deberíamos tener todos los componentes disponibles e incluso un BUS disponible en el caso de eventos.
+- La curva de aprendizaje es mucho más pronunciada.
+- El sistema está compuesto por componentes independientes y separados los cuales habrá que entender de forma separada.
+- Los cambios son más difíciles de realizar, ya que al modificar un componente se pueden ver afectados otros componentes que dependan de el. 
+- Es un sistema modular en donde se pueden desplegar los componentes de manera independiente.
+- Su disponibilidad es mayor ya que se pueden hacer copias de los componentes, los cuales tienen un tamaño significativamente menor, lo que optimiza recursos.
+- Fácil de escalar.
+- Mucho más adaptable para desplegar en contextos diferentes. 
+
+---
+
+
+
+## Examen.
+
+## Estas son tus respuestas
+
+### Puedes revisar y cambiar las respuestas. Al terminar presiona “Calificar respuestas” para enviar las preguntas y conocer tu puntuación.
+
+1.
+
+En el contexto de metodologías tradicionales, ¿en qué etapa del proceso de desarrollo de software se toman las decisiones de arquitectura?
+
+Diseño de la solución
+
+
+
+2.
+
+Y en el contexto de metodologías ágiles, ¿cuándo se toman las decisiones de arquitectura?
+
+En cada iteración
+
+
+
+3. X
+
+¿Por qué no existe la bala de plata que resuelva las dificultades del desarrollo de software?
+
+Porque siempre habrá dificultades accidentales y esenciales que se combinan de formas diferentes en cada contexto
+
+
+
+4. X
+
+De las formas en las que podemos trabajar con las dificultades esenciales, ¿cuál es la que más involucra a los arquitectos de software?
+
+Todas las opciones son correctas.
+
+
+
+5.
+
+En el contexto de metodologías ágiles, ¿dónde encontraremos el rol del arquitecto?
+
+En el equipo de desarrollo
+
+
+
+6.
+
+¿Cuál de estas definiciones mejor describe la arquitectura de software?
+
+Es la estructura de un sistema, sus interconexiones, y las decisiones de diseño que llevaron a éstas
+
+
+
+7.
+
+La ley de Conway nos dice que:
+
+El diseño del sistema va a ser una copia de la estructura de comunicación de la organización
+
+
+
+8.
+
+La empresa GitJam es una organización multinacional con desarrolladores distribuidos en todo el mundo. Su metodología de trabajo es principalmente remoto: No tienen oficina más allá de un pequeño headquarters en San Francisco, donde se reúnen los directivos. Los desarrolladores se comunican por email y disponen de una plataforma de chat. ¿cómo es el diseño de su sistema?
+
+Distribuido, comunicación entre componentes principalmente asincrónica
+
+
+
+9. X
+
+¿Cuál de los siguientes mejor describe el objetivo de un arquitecto?
+
+Usar su experiencia para diseñar el mejor sistema posible
+
+
+
+10.
+
+¿Cuál de estas prácticas es esencial para un arquitecto en contexto de metodologías ágiles? 
+
+Reevaluar la arquitectura en cada iteración a través de métricas y alertas.
+
+
+
+11.
+
+En la toma de requerimientos, trabajamos para entender y definir:
+
+El problema a resolver
+
+
+
+12.
+
+El usuario podrá comprar con tarjeta de crédito a través del sistema, ¿qué tipo de requerimiento es?
+
+Funcional
+
+
+
+13.
+
+“El sistema incrementará nuestra capacidad de venta a clientes extranjeros en un 25%.” ¿Qué tipo de requerimiento es?
+
+De negocio
+
+
+
+14.
+
+“Los precios podrán ser actualizados desde un panel de administración.” ¿Qué tipo de requerimiento es?
+
+Funcional
+
+
+
+15.
+
+“El sistema deberá estar disponible para ser presentado en la conferencia de la empresa en abril de este año.” ¿Qué tipo de requerimiento es?
+
+De proyecto
+
+
+
+16.
+
+“Toda interacción con el sistema debe ser compatible con usuarios con discapacidad visual.” ¿Qué tipo de requerimiento es?
+
+No funcional
+
+
+
+17. X
+
+¿Cuál de los siguientes requerimientos funcionales incluye explícitamente un requerimiento no funcional?
+
+“Se podrán canjear puntos acumulados por el uso de tarjetas de crédito por beneficios varios, a definir por el banco.”
+
+
+
+18.
+
+“El sistema podría ser atacado a través de una denegación distribuida de servicio.” ¿Qué describe esto?
+
+Un riesgo
+
+
+
+19.
+
+Luego de identificar los riesgos, ¿qué hace el arquitecto con esta información?
+
+Los prioriza para resolver sólo los más importantes
+
+
+
+20.
+
+¿Por qué no podemos resolver todos los riesgos detectados?
+
+Porque dedicaremos esfuerzo que no estaremos usando para desarrollar las funcionalidades del sistema
+
+
+
+21.
+
+En la compañía ACME-Products quieren comenzar un nuevo producto, capaz de analizar datos de compras y comportamiento de compradores en tiempo real. En una conversación sobre requerimientos, el dueño del producto le comunica al arquitecto que deben usar la base de datos GuayabaDB, ya que tienen un acuerdo previo con la compañía que la desarrolla. ¿Qué es esto?
+
+Una restricción de diseño
+
+
+
+22.
+
+¿Cuáles de estas puede ser considerada una restricción de diseño?
+
+Hay leyes sobre la privacidad de datos que nuestro sistema almacena
+
+
+
+23.
+
+Un sistema contable permite a sus usuarios el mantener el estado actual de las finanzas de la organización. Además, el departamento de finanzas encargó el desarrollo de un nuevo sistema para tener reportes trimestrales, semestrales y anuales y filtrarlos por tipo de transacción. ¿Qué estilo de arquitectura es más pertinente?
+
+Centrado en base de datos
+
+
+
+24.
+
+Un *ecommerce* en crecimiento quiere hacer mejor uso de sus recursos para que pueda crecer de forma más eficiente. Luego de un proceso de análisis y medición, encontraron que calcular las promociones para cada producto bloquea la mayor parte del uso de memoria del sistema. ¿Cuál de estas propuestas mejor ataca la situación?
+
+Usar una arquitectura distribuida y separar el cálculo de promociones
+
+
+
+25.
+
+En los frameworks web modernos existe el concepto de middleware, que describe una forma de interceptar el pedido o la respuesta del sistema con componentes desarrollados independientes uno del otro. ¿Qué estilo de arquitectura están implementando?
+
+Flujo de Datos: Tubos y filtros
+
+
+
+26. X
+
+En un centro de investigación, científicos de diferentes áreas utilizan un sistema para, a través de un modelo común de física, química y biología, simular hipótesis de procesos que se podrían haber dado durante la historia de nuestro planeta. Para esto, le deben describir al sistema los hechos que forman parte de su hipótesis y luego consultar el resultado simulado. ¿Qué estilo de arquitectura usará el sistema?
+
+Pizarrón
+
+
+
+27.
+
+De los siguientes estilos, ¿cuál es que más se usa al desarrollar aplicaciones web?
+
+Cliente - servidor
+
+
+
+28.
+
+Se desarrolló un pequeño script en Python para sincronizar los logs de varios servidores. Pasó el tiempo y la cantidad de logs a sincronizar creció, y con ellos las responsabilidades del pequeño script. ¿Qué estilo de arquitectura podemos usar para mejorar esta situación?
+
+Programa y subrutinas
+
+
+
+29. 
+
+Una librería desarrolló un sistema para administrar su venta y existencia de libros. Diez años más tarde, la empresa cuenta con más de 800 librerías distribuidas en 30 países de américa y europa. El sistema de administración de ventas y existencia se sigue usando para cada librería, mientras que muchos otros sistemas se encargan de la gestión global de la compañía, sus métricas por región y su expansión. ¿Qué estilo de arquitectura estamos describiendo?
+
+Orientado a servicios
+
+
+
+30. X
+
+¿Cuántos estilos de arquitectura puede haber en un sistema?
+
+Cada sistema tendrá su estilo; depende de la cantidad de sistemas
