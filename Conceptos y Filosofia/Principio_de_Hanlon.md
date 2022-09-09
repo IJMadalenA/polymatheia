@@ -38,3 +38,15 @@ Con esto en mente la perspectiva respecto a los actos de los demás y a nuestras
 
 Entonces, con esto claro, jamás atribuyas a la maldad aquello que puede ser explicado adecuadamente por la mera estupidez, y serás feliz.
 
+---
+
+__Principio de Hanlon en el trabajo.__
+
+La comunicación humana es un medio totalmente ineficiente, un puente que a duras penas logra conectar los extremos de aquel abismo insalvable que es la comunicación entre dos personas, por lo que en muchas ocasiones, sino es que en todas, las interacciones con nuestros compañeros o superiores no tienen en cuenta toda la información posible, principalmente porque es imposible, lo que irremediablemente conlleva a equivocaciones y a herir susceptibilidades cuando esta brecha es lo suficientemente grande o significativa.
+
+
+
+Situaciones como el no ser convocado a una reunión en específico, no ser incluido dentro de un proyecto determinado, que un compañero al que no consideramos lo suficientemente competente sea ascendido en lugar de nosotros, son algunas de las situaciones en las que tener un punto de vista con más perspectiva nos ayudaría a entender esas decisiones. 
+
+
+
