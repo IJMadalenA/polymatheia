@@ -54,3 +54,44 @@ Una persona puede vivir con unos ingresos determinados sin problemas, sin embarg
 ## 3. Menor relevancia, más tiempo.
 
 Se tiende a dedicar más tiempo a una tarea, cuanto más irrelevante es. Por tanto, cuanto más relevante sea la tarea, menos tiempo le dedicaremos, Existiendo una relación inversamente proporcional.
+
+
+
+## Formula.
+
+
+
+​     $ x = \dfrac{2k^2 + P}{n} $
+
+$x$ - Numero de nuevos empleados que serán contratados anualmente.
+
+$k$ - Numero de empleados que quieren ser promovidos contratando a nuevos empleados.
+
+$m$ - Numero de horas trabajadas por persona para la preparación de memorandos internos.
+
+$P$ - Diferencia: _edad de contratación_ y _edad de retiro_.
+
+$n$ - Numero de expedientes administrativos realmente completados.
+
+
+
+## Referencias.
+
+[Parkinson's law - Wikipedia](https://en.wikipedia.org/wiki/Parkinson's_law)
+
+[Ley de Parkinson (https_hmong.es)](read://https_hmong.es/?url=https%3A%2F%2Fhmong.es%2Fwiki%2FParkinson%27s_Law)
+
+[parkLaw.pdf (uib.es)](http://bioinfo.uib.es/~joemiro/teach/material/escritura/parkLaw.pdf)
+
+[rfp.pdf (revistamarina.cl)](https://revistamarina.cl/revistas/1978/5/rfp.pdf)
+
+---
+
+
+
+## Notas para la redacción.
+
+- Su creador fué Cyril Northcote Parkinson, kistoriador y escritor británico.
+- Su primera aparición fue en un articulo de tintes satíricos en la reviste The Economist en 1955.
+- Sus conclusiones derivaron de su amplia experiencia trabajando para el servicio civil británico.
+- 

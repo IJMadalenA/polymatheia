@@ -31,6 +31,8 @@ Según un conveniente [estudio](https://infopages.barco.com/rs/141-TQB-685/image
 Sin embargo existen manera para minimizar los efectos de la ineludible ley de la trivialidad.
 
 - __Organización:__ La mejor solución es asignar plazos máximos de entrega de una longitud realista intentando que sea el justo y necesario para el cumplimiento de la tarea. Al asignarle un plazo máximo de ejecución las cuestiones más triviales serán relegadas al tiempo restante posterior al cumplimiento del trabajo, ya que siempre se  abarcará la totalidad del tiempo disponible indiferentemente de la tarea. La mejor forma de ahorrarte las opiniones sin importancia sobre un tema de poca importancia es no darlo a conocer a los demás.  
-
 - Es más útil concentrarse en el esfuerzo que se realizará después de tomar la decisión para lograr que esta sea la correcta que en malgastar tiempo en buscar exactamente la mejor y más correcta de las decisiones. 
 - La única razón por la que las cuestiones triviales toman mucho tiempo es porque se les otorgan demasiada importancia. Relativizar, establecer plazos y confiar en el criterio propio son las mejores formas de o perder demasiado tiempo pensando en asuntos que no valen la pena.
+
+---
+
