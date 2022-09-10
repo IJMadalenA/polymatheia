@@ -521,23 +521,19 @@ En cada iteración
 
 
 
-3. X
+3. 
 
 ¿Por qué no existe la bala de plata que resuelva las dificultades del desarrollo de software?
 
-Porque siempre habrá dificultades accidentales y esenciales que se combinan de formas diferentes en cada contexto
-
-Porque seguirán apareciendo dificultades accidentales que tienen que ver con las nuevas tecnologías que se inventan
+Porque las dificultades esenciales son las más difíciles, y tienen que ver con cada contexto y dominio
 
 
 
-4. X
+4. 
 
 De las formas en las que podemos trabajar con las dificultades esenciales, ¿cuál es la que más involucra a los arquitectos de software?
 
-Todas las opciones son correctas.
-
-Decidir si hacer el producto o comprarlo ya hecho.
+Cuando son grandes diseñadores y encuentran la solución más pertinente.
 
 
 
@@ -644,6 +640,8 @@ No funcional
 “Se podrán canjear puntos acumulados por el uso de tarjetas de crédito por beneficios varios, a definir por el banco.”
 
 “El administrador podrá cancelar un préstamo si detecta la posibilidad de fraude.”
+
+“La aplicación móvil permitirá consultar el estado de cuenta, últimos movimientos y vencimientos.”
 
 
 
